@@ -31,7 +31,7 @@ public class CharacterRecognition {
         System.setProperty("aip.log4j.conf", "log4j.properties");
 
         // 调用接口
-        String path = "test.jpg";
+        String path = "/Users/dingxin/Dev/workspace/nlp/src/main/resources/static/test.jpg";
         JSONObject res = client.basicGeneral(path, new HashMap<String, String>());
         System.out.println(res.toString(2));
     }
